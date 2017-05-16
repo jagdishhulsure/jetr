@@ -1,0 +1,565 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GET Recharge</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <script src="css/bootstrap.min.js"></script>
+    <link href="css/custam.css" type="text/css" rel="stylesheet" />
+    <link href="css/components.min.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="js/jquery.niftymodals.css" />
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script src="js/jquery.niftymodals.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.md-trigger').on('click', function () {
+
+                var modal = $(this).data('modal');
+                $("#" + modal).niftyModal();
+            });
+
+        });
+    </script>
+
+    <link href="css-js/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script type="text/javascript" src="css-js/js/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="main-header">
+
+            <!--<div class="col-md-6 col-sl-12 pull-left">
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="faq.html">F A Q</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="mobile-app.html">Mobile App</a></li>
+                </ul>
+            </div>-->
+
+            <div class="col-md-6 col-sl-12 pull-right">
+
+                <ul class="main-menu pull-right">
+
+                    <li><a href="#" data-toggle="modal" data-target="#myModal4">Login</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal5">Signup</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="support.html">Help</a></li>
+
+                </ul>
+
+                <!-- script-for-menu -->
+                <script>
+                    $("span.menu").click(function () {
+                        $("ul.nav1").slideToggle(300, function () {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!-- /script-for-menu -->
+
+                <div class="md-container md-effect-1" id="modal-1">
+                    <div class="md-content login-popup" style="border: solid 1px #4dd0e1; min-width: 22%;">
+                        <div>
+
+                            <form class="login-form" action="#" method="post" novalidate="novalidate">
+                                <h3 class="signin-header">Sign In</h3>
+                                <div class="alert alert-danger display-hide">
+                                    <button class="close" data-close="alert"></button>
+                                </div>
+                                <div class="form-group">
+
+                                    <label class="control-label visible-ie8 visible-ie9">Username</label>
+                                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label visible-ie8 visible-ie9">Password</label>
+                                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password">
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn green uppercase">Login</button>
+                                    <label class="rememberme check mt-checkbox mt-checkbox-outline">
+                                        <input type="checkbox" name="remember" value="1">Remember
+                        <span></span>
+                                    </label>
+                                    <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
+                                </div>
+                            </form>
+
+
+                            <button type="button" class="btn green btn-outline btn-lg md-close">Close me!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md-container md-effect-1" id="modal-3">
+                    <div class="md-content login-popup" style="border: solid 1px #4dd0e1; min-width: 22%;">
+                        <div>
+
+                            <form class="login-form" action="#" method="post" novalidate="novalidate">
+                                <h3 class="signin-header">Register</h3>
+                                <div class="alert alert-danger display-hide">
+                                    <button class="close" data-close="alert"></button>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label class="control-label visible-ie8 visible-ie9">Mobile Number</label>
+                                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Mobile Number" name="username">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label class="control-label visible-ie8 visible-ie9">Email ID</label>
+                                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Email id" name="username">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label visible-ie8 visible-ie9">Password</label>
+                                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password">
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn green uppercase" style="margin-bottom: 25px;">Register</button>
+
+                                </div>
+                            </form>
+
+
+                            <button type="button" class="btn green btn-outline btn-lg md-close">Close me!</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="col-md-12">
+
+            <div class="col-md-4">
+
+                <div class="logo">
+
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Quick Recharge" /></a>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4 top-space-50 text-center">
+                <div class="col-md-4"></div>
+
+                <div class="col-md-3">
+
+                    <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+                    <p>E Wallet <i class="fa fa-inr" aria-hidden="true"></i>125</p>
+
+                </div>
+
+                <div class="col-md-5">
+                    <div class="col-md-12">
+                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="dropdown">
+                            <p>Ajay kumar</p>
+                            <div class="dropdown-content text-left">
+                                <a href="view-profile.html"><i class="fa fa-eye" aria-hidden="true"></i>View Profile</a>
+                                <a href="setting.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit Profile </a>
+                                <a href="your-orders.html"><i class="fa fa-list" aria-hidden="true"></i>Your Order</a>
+                                <a href="e-wallet.html"><i class="fa fa-money" aria-hidden="true"></i>E Wallet</a>
+                                <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="pull-left col-md-12" style="margin-bottom: 50px; margin-top: -20px; border-top: solid 1px #4dd0e1;"></section>
+
+        <div class="set-content">
+            <div class="container">
+                <h4 class="view_title">Your Profile</h4>
+                <div class="bs-example bs-example-tabs orders-tab" role="tabpanel" data-example-id="togglable-tabs">
+                    <ul id="myTab" class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Personal info</a></li>
+                        <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Address</a></li>
+                        <!--<li role="presentation"><a href="#return" role="tab" id="return-tab" data-toggle="tab" aria-controls="return">Change Password</a></li>-->
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div role="tabpanel" class="tabs-para tab-pane fade in active" id="home" aria-labelledby="home-tab">
+                            <div class="profile-gd">
+                                <ul class="pro-left">
+                                    <li>Name</li>
+                                    <li>Email</li>
+                                    <li>Mobile number</li>
+                                    <li>Date Of Birth</li>
+                                    <li>Gender</li>
+                                </ul>
+                                <ul class="pro-right">
+                                    <li>: Ajay kumar lankey</li>
+                                    <li>: ajaykumar.4881@gmail.com</li>
+                                    <li>: 99169 72111</li>
+                                    <li>: 01/06/1985</li>
+                                    <li>: Male</li>
+                                </ul>
+
+                                <div class="col-md-3 pull-right">
+
+                                    <div class="profile-photo col-md-12">
+
+                                        <img src="images/airtel-new-logo-ver.jpg" alt="profile pic" />
+
+                                    </div>
+
+                                    <div class="col-md-12 top-space-25">
+
+                                        <label class="btn btn-info btn-file btn-block">
+                                            Change your Photo
+                                            <input type="file" style="display: none;">
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tabs-para tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                            <div class="profile-gd">
+                                <ul class="pro-left">
+                                    <li>Name</li>
+                                    <li>Email</li>
+                                    <li>Mobile number</li>
+                                    <li>Date Of Birth</li>
+                                    <li>Gender</li>
+                                </ul>
+                                <ul class="pro-right">
+                                    <li>: Ajay kumar lankey</li>
+                                    <li>: ajaykumar.4881@gmail.com</li>
+                                    <li>: 99169 72111</li>
+                                    <li>: 01/06/1985</li>
+                                    <li>: Male</li>
+                                </ul>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <!--<div role="tabpanel" class="tabs-para tab-pane fade" id="return" aria-labelledby="return-tab">
+                            <div class="profile-gd">
+                                <form>
+                                    <div class="tab-for-sett">
+                                        <h5>old password</h5>
+                                        <input type="password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+                                        <h5>new password</h5>
+                                        <input type="password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+                                        <h5>confirm password</h5>
+                                        <input type="password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <input type="submit" value="SAVE">
+                                </form>
+                            </div>
+                        </div>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <footer class="border-dark top-space-50 col-md-12">
+
+        <div class="row">
+
+            <div class="col-md-5 text-center">
+
+                <h4>Qucik Links</h4>
+
+                <div class="col-md-4  col-sm-4 footer-menu">
+
+                    <ul>
+
+                        <li><a href="#">F A Q</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Login</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 col-sm-4 footer-menu">
+
+                    <ul>
+
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Turm and Condition</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4  col-sm-4 footer-menu">
+
+                    <ul>
+
+                        <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>Assured</a></li>
+                        <li><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Guaranteed</a></li>
+                        <li><a href="#"><i class="fa fa-umbrella" aria-hidden="true"></i>24 / 7 Care</a></li>
+                        <li><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Our Promise</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+
+                <h4 class="text-center">Testimonial</h4>
+
+                <div class="container col-md-12" style="height: 150px;">
+                    <br>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicato<i class="fa fa-inr" aria-hidden="true"></i>-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+                                <div class="about-testimonial-image ">
+                                    <img alt="" src="images/person_1.png">
+                                </div>
+                                <a class="about-testimonial-author" href="#">Russel Reagan
+                                </a>
+                                <span class="about-testimonial-company">CCD Realestate
+                                </span>
+                                <div class="about-testimonial-content">
+                                    <p class="about-testimonial-quote">
+                                        Donec ut purus sed tortor malesuada venenatis eget eget lorem. Nullam tempor lectus a ligula lobortis pretium.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="about-testimonial-image ">
+                                    <img alt="" src="images/person_2.png">
+                                </div>
+                                <a class="about-testimonial-author" href="#">Russel Reagan
+                                </a>
+                                <span class="about-testimonial-company">CCD Realestate
+                                </span>
+                                <div class="about-testimonial-content">
+                                    <p class="about-testimonial-quote">
+                                        Donec ut purus sed tortor malesuada venenatis eget eget lorem. Nullam tempor lectus a ligula lobortis pretium.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="about-testimonial-image ">
+                                    <img alt="" src="images/person_1.png">
+                                </div>
+                                <a class="about-testimonial-author" href="#">Russel Reagan
+                                </a>
+                                <span class="about-testimonial-company">CCD Realestate
+                                </span>
+                                <div class="about-testimonial-content">
+                                    <p class="about-testimonial-quote">
+                                        Donec ut purus sed tortor malesuada venenatis eget eget lorem. Nullam tempor lectus a ligula lobortis pretium.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="about-testimonial-image ">
+                                    <img alt="" src="images/person_2.png">
+                                </div>
+                                <a class="about-testimonial-author" href="#">Russel Reagan
+                                </a>
+                                <span class="about-testimonial-company">CCD Realestate
+                                </span>
+                                <div class="about-testimonial-content">
+                                    <p class="about-testimonial-quote">
+                                        Donec ut purus sed tortor malesuada venenatis eget eget lorem. Nullam tempor lectus a ligula lobortis pretium.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Left and right controls -->
+
+                       <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>-->
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 pull-right">
+
+                <div class="col-md-6 text-center footer-logo-img">
+
+                    <h4>Download App</h4>
+
+                    <img src="images/logo.png" class="top-space-25" alt="Quick Recharge" />
+
+                </div>
+
+                <div class="col-md-6 text-center">
+
+                    <h4>Connect With Us</h4>
+
+                    <div class="portlet-body util-btn-margin-bottom-5 top-space-25">
+                        <a href="#"><i class="fa fa-facebook margin-10" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter margin-10" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin margin-10" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus margin-10" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <section class="footer-bottom col-md-12 top-space-25 padding-LR">
+
+        <p class="pull-left">Copyright 2015 JET Recharge</p>
+
+        <p class="pull-right">Designed by : <a href="#">Orange Shades</a> </p>
+
+    </section>
+
+    <!-- login -->
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-info">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body modal-spa">
+                    <div class="login-grids">
+                        <div class="login">
+                            <div class="login-left">
+                                <ul>
+                                    <li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
+                                    <li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
+                                    <li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
+                                </ul>
+                            </div>
+                            <div class="login-right">
+                                <form>
+                                    <h3>Signin with your account </h3>
+                                    <input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">
+                                    <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+                                    <h4><a href="#">Forgot password</a> / <a href="#">Create new password</a></h4>
+                                    <div class="single-bottom">
+                                        <input type="checkbox" id="Checkbox2" value="">
+                                        <label for="brand"><span></span>Remember Me.</label>
+                                    </div>
+                                    <input type="submit" value="SIGNIN">
+                                </form>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //login -->
+    <!-- signup -->
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-info">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body modal-spa">
+                    <div class="login-grids">
+                        <div class="login">
+                            <div class="login-left">
+                                <ul>
+                                    <li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
+                                    <li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
+                                    <li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
+                                </ul>
+                            </div>
+                            <div class="login-right">
+                                <form>
+                                    <h3>Create your account </h3>
+                                    <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                    <input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+                                    <input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">
+                                    <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+
+                                    <input type="submit" value="CREATE ACCOUNT">
+                                </form>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //signup -->
+
+    <script src="css/portfolio-4.min.js" type="text/javascript"></script>
+    <!--<script src="js/jquery.min.js" type="text/javascript"></script>-->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
